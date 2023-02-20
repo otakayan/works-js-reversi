@@ -1,0 +1,95 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #24292e;
+  font-family: "Sawarabi Gothic";
+}
+
+a {
+  text-decoration: none;
+  color: #24292e;
+}
+
+p {
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+#header {
+  max-width: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 4%;
+  height: 170px;
+}
+#header ul {
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+}
+#header ul li:not(:first-child) {
+  margin-left: 30px;
+}
+#header ul li {
+  font-size: 0.9rem;
+}
+#header ul li a {
+  color: #24292e;
+  transition: all 0.3s;
+}
+#header ul li a:hover {
+  opacity: 0.5;
+}
+
+footer {
+  background-color: #24292e;
+  color: #ffffff;
+  margin-top: 30px;
+  padding: 10px 10px 10px;
+  text-align: center;
+}
+
+#reversi {
+  position: relative;
+  height: 500px;
+}
+
+.desc {
+  max-width: 960px;
+  display: flex;
+  margin: 0 auto;
+}
+.desc .desc_left {
+  width: 49%;
+}
+.desc .desc_right {
+  width: 49%;
+  margin-left: 2%;
+  text-align: left;
+}
+
+.desc_box {
+  text-align: left;
+}
+.desc_box .desc_title {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.desc_box a {
+  text-decoration: underline;
+}
+.desc_box a:hover {
+  color: red;
+}/*# sourceMappingURL=reversi.css.map */
