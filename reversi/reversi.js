@@ -91,7 +91,7 @@
     {
         let y,x,n,obj,ban;
         y=Math.floor((event.clientY-170)/50); //ユーザーのクリックでブレがあるためMath.floorで切り捨て headerのheightをマイナス
-        x=Math.floor(event.clientX/50); //ユーザーのクリックでブレがあるためMath.floorで切り捨て
+        x=Math.floor((event.clientX-150)/50); //ユーザーのクリックでブレがあるためMath.floorで切り捨て
         n=(y-1)*8+(x-1); //id番号を得る
         obj=document.getElementById("img"+n); //nは0~63でマス目の位置
         ban=document.getElementById("img64"); //img64は手番の画像をさす
@@ -108,7 +108,7 @@
     {
         let img,n=0;
         for (let y=50;y<=50*8;y+=50){ //yはpx値
-            for (let x=50;x<=50*8;x+=50){ //xはpx値
+            for (let x=200;x<=150+(50*8);x+=50){ //xはpx値
                 if (n==27 ||n==36){       // 白い駒　n=27→M[4][4]の位置 n=36→M[5][5]の位置
                     img="<img src='white.jpg'";
                 }
@@ -122,8 +122,8 @@
                 n++; //nのインクリメントでループ
             }
         }
-        body.insertAdjacentHTML("beforeend","<img id='img64' src='white.jpg' style='position:absolute;left:500px;top:50px'>"); //手番の駒
-        body.insertAdjacentHTML("beforeend","<input type='button' id='btn' value='計測' style='position:absolute;left:500px;top:150px'>"); //計測ボタン
+        body.insertAdjacentHTML("beforeend","<img id='img64' src='white.jpg' style='position:absolute;left:700px;top:50px'>"); //手番の駒
+        body.insertAdjacentHTML("beforeend","<input type='button' id='btn' value='計測' style='position:absolute;left:700px;top:150px'>"); //計測ボタン
     }
     //ここからスタート
     init();
